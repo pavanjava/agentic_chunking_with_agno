@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What is the main purpose of the study described in the paper?",
+    "answer": "To present a novel framework for automating the adjudication of cardiovascular events in clinical trials using Large Language Models (LLMs)",
+    "context": "This study addresses these critical limitations by presenting a novel framework for automating the adjudication of cardiovascular events in clinical trials using Large Language Models (LLMs)."
+  },
+  {
+    "question": "What are the two stages of the approach developed in the study?",
+    "answer": "First, employing an LLM-based pipeline for event information extraction from unstructured clinical data and second, using an LLM-based adjudication process guided by a Tree of Thoughts approach and clinical endpoint committee guidelines",
+    "context": "We developed a two-stage approach: first, employing an LLM-based pipeline for event information extraction from unstructured clinical data and second, using an LLM-based adjudication process guided by a Tree of Thoughts approach and clinical endpoint committee (CEC) guidelines."
+  },
+  {
+    "question": "What F1-score did the framework achieve for event extraction?",
+    "answer": "0.82",
+    "context": "Using cardiovascular event-specific clinical trial data, the framework achieved an F1-score of 0.82 for event extraction and an accuracy of 0.68 for adjudication."
+  },
+  {
+    "question": "What novel metric did the researchers introduce in this study?",
+    "answer": "CLEART score",
+    "context": "Furthermore, we introduce the CLEART score, a novel, automated metric specifically designed for evaluating the quality of AI-generated clinical reasoning in adjudicating cardiovascular events."
+  },
+  {
+    "question": "What extraction pipeline steps were used in the Event Information Extraction stage?",
+    "answer": "Sentence Segmentation, Tokenization, Entity Detection, and Relation Detection",
+    "context": "Our extraction pipeline, illustrated in Figure 2, consists of four key steps: Sentence Segmentation, Tokenization, Entity Detection, and Relation Detection."
+  },
+  {
+    "question": "What four key elements does the system extract for each event?",
+    "answer": "The event name, associated sentence(s), negation status, and the date of the event",
+    "context": "For each event, our system extracts four key elements, as shown in figure 3: • the event name (a standardized term for the clinical event), • associated sentence(s) (the specific textual context in which the event was mentioned), • negation status (whether the event is positively affirmed or negated in the text), and • the date of the event (temporal information associated with the event, when available)."
+  },
+  {
+    "question": "What approach was implemented using GPT-4 to classify deaths?",
+    "answer": "Tree of Thoughts (ToT) approach",
+    "context": "We implemented a Tree of Thoughts (ToT) approach using GPT-4 to classify deaths as cardiovascular or non-cardiovascular."
+  },
+  {
+    "question": "What was the accuracy achieved by the Tree of Thought approach using GPT-4 for adjudication?",
+    "answer": "0.68",
+    "context": "The Tree of Thought approach using GPT-4 demonstrated the highest accuracy at 0.68."
+  },
+  {
+    "question": "What are the six criteria used in the CLEART score?",
+    "answer": "Clarity, Logical consistency, Evaluation details, Adherence to guidelines, Relevance, Timeline accuracy",
+    "context": "This novel metric provides a comprehensive assessment of the reasoning process, focusing on six key aspects that are crucial in clinical decision making, as shown in Table 1. Criterion Description Clarity Clarity of reasoning without ambiguities Logical consistency Logical consistency without contradictions Evaluation details Inclusion of specific clinical reasoning and key details Adherence to guidelines Strict adherence to provided guidelines Relevance Correct use of diagnostic criteria/autopsy findings Timeline accuracy Correct identification of relevant time frames"
+  },
+  {
+    "question": "Which criteria in the CLEART score showed the highest and lowest average scores?",
+    "answer": "Logical consistency showed the highest average score at 0.98, and Timeline accuracy showed the lowest at 0.31",
+    "context": "The high score in logical consistency (0.98) indicates that the framework's reasoning is internally coherent and free from contradictions. This is crucial for building trust in the system's decision-making process. Similarly, the strong adherence to guidelines (0.96) suggests that the AI is effectively incorporating the provided clinical endpoint committee (CEC) guidelines into its reasoning process. The system showed moderate performance in clarity (0.69) and evaluation details (0.71), indicating room for improvement in how it articulates its reasoning and includes specific clinical details. The lower scores in relevance (0.55) and especially timeline accuracy (0.31) highlight areas requiring significant enhancement."
+  }
+]

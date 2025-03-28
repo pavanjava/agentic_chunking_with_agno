@@ -1,0 +1,23 @@
+agno
+python-dotenv
+qdrant-client
+anthropic
+ollama
+
+# pdf parser
+pypdf
+
+# chunking library
+chonkie
+
+# configuration
+packaging
+importlib-metadata
+
+# evals
+ragas
+deepeval
+
+# llama-index
+llama-index
+llama-index-llms-openai
